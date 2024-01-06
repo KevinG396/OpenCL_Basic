@@ -4,5 +4,6 @@
 To test it, run:
 ```
 g++ -I"%CL%" -L"%CL_lib%" mat_mul.cpp -o mat_mul -lOpenCL
+
 ./mat_mul
 ```
