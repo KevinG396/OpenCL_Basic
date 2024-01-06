@@ -92,7 +92,7 @@ int main() {
         clEnqueueWriteBuffer(queue, bufA, CL_TRUE, 0, bytes, A.data(), 0, nullptr, nullptr);
         clEnqueueWriteBuffer(queue, bufB, CL_TRUE, 0, bytes, B.data(), 0, nullptr, nullptr);
 
-        // set kernel parameters
+        // set kernel arguments
         clSetKernelArg(kernel, 0, sizeof(cl_mem), &bufA);
         clSetKernelArg(kernel, 1, sizeof(cl_mem), &bufB);
         clSetKernelArg(kernel, 2, sizeof(cl_mem), &bufC);
