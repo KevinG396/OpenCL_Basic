@@ -1,3 +1,5 @@
+// Host code for matrix multiply
+
 #include <CL/cl.h>
 #include <iostream>
 #include <vector>
